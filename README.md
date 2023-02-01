@@ -1,7 +1,7 @@
 # Template voor Portfolioprojecten
 
 ## [Documentation](Documentation)
-In deze map sla je **alle** ducumentatie op die behoort bij het project.
+In deze map sla je **alle** documentatie op die behoort bij het project.
 
 Maak zelf submappen voor de verschillende onderdelen.
 
