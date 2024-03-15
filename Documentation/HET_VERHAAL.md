@@ -6,11 +6,8 @@ In een ver land ligt een mysterieuze tempel die verloren is gegaan door de eeuwe
 
 Je begint je reis in een klein dorp aan de rand van de jungle, waar de oude verhalen over de tempel nog steeds levendig zijn. Van daaruit moet je door verschillende gebieden trekken, elk met zijn eigen uitdagingen en gevaren, om uiteindelijk de tempel te bereiken en de schat te vinden. Maar pas op, want je bent niet de enige die op zoek is naar de schat, en sommige obstakels kunnen dodelijk zijn.
 
-Gebieden:
+gebieden: herberg, markt, oude tempelruïnes.
 
-Het dorp:
-
-Locaties: herberg, markt, oude tempelruïnes.
 Voorwerpen: kaart van de jungle, zwaard, toorts.
 De jungle:
 
