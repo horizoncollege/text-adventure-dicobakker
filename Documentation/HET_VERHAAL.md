@@ -21,6 +21,7 @@ De verlaten tempel:
 
 Locaties: grote binnenplaats, doolhof van gangen, heilige kamers.
 Voorwerpen: sleutel van de tempel, amulet van bescherming, artefacten.
+
 Eindpunt:
 De tempel bevat een centrale kamer waar de schat zich bevindt, bewaakt door een reeks puzzels en valstrikken. Alleen diegene die slim genoeg is om de puzzels op te lossen en behendig genoeg is om de valstrikken te ontwijken, zal de schat kunnen bereiken en veilig terug kunnen keren naar het dorp.
 
