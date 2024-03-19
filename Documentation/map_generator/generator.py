@@ -7,7 +7,7 @@ MAP_HEIGHT = 15
 
 # Function to generate a map with base ground "PLATLAND"
 def generate_platland_map():
-    platland_map = [[{"hoogte": 0, "positie": [x, y]} for x in range(MAP_WIDTH)] for y in range(MAP_HEIGHT)]
+    platland_map = [[{"hoogte": 0, "positie": [x + 1, y + 1]} for x in range(MAP_WIDTH)] for y in range(MAP_HEIGHT)]
     return platland_map
 
 # Function to overwrite values on a map
