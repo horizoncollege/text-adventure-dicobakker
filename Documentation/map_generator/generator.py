@@ -4,14 +4,14 @@ import json
 MAP_WIDTH = 15
 MAP_HEIGHT = 15
 
-# Function to generate a map with base ground "PLATLAND"
-def generate_platland_map():
-    platland_map = [[{"type": "platland", "hoogte": 0, "dikte": 0, "positie": [x + 1, y + 1]} for x in range(MAP_WIDTH)] for y in range(MAP_HEIGHT)]
-    return platland_map
+# Function to generate a map with base ground "flat land"
+def generate_flat_land_map():
+    flat_land_map = [[{"type": "flat_land", "hight": 0, "thickness": 0, "position": [x + 1, y + 1]} for x in range(MAP_WIDTH)] for y in range(MAP_HEIGHT)]
+    return flat_land_map
 
 # Function to generate a map with forests at specific locations
-def generate_bos_map(platland_map):
-    bos_map = [row[:] for row in platland_map]  # Create a copy of the platland map
+def generate_forrest_map(flat_land_map):
+    forest_map = [row[:] for row in flat_land_map]  # Create a copy of the platland map
 
     # Define specific locations for forests
     forest_locations = [
@@ -27,9 +27,13 @@ def generate_bos_map(platland_map):
     # Place forests at specific locations
     for row in forest_locations:
         for x, y in row:
-            bos_map[y - 1][x - 1] = {"type": "bos", "hoogte": 0, "dikte": 1, "positie": [x, y]}
+            forest_map[y - 1][x - 1] = {"type": "forest", "hight": 0, "thickness": 1, "position": [x, y]}
 
-    return bos_map
+    return forest_map
+
+def generate_zee_map():
+    zee_map = [[{"type": "zee", "hight": -1, "thickness": 0, "position": [x + 1, y + 1]} for x in range(MAP_WIDTH)] for y in range(MAP_HEIGHT)]
+    return zee_map
 
 # Function to overwrite values on a map
 def overwrite_values(original_map, overwrite_map):
@@ -40,14 +44,14 @@ def overwrite_values(original_map, overwrite_map):
 
 def main():
     # Generate platland map
-    base_map = generate_platland_map()
+    base_map = generate_flat_land_map()
 
     # Generate bos map at specific locations on top of platland
-    bos_map = generate_bos_map(base_map)
+    forest_map = generate_forrest_map(base_map)
 
     # Save final map as JSON
     with open("map.json", "w") as json_file:
-        json.dump(bos_map, json_file, indent=4)
+        json.dump(forest_map, json_file, indent=4)
 
 if __name__ == "__main__":
     main()
